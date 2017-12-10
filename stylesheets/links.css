@@ -1,5 +1,10 @@
 /* Styles for the links */
 
 a {
+  border-bottom: .1em solid blue;
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration: none;
 }

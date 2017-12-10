@@ -1,8 +1,18 @@
 /* Styles for the links */
 
 a {
-  border-bottom: .1em solid blue;
+  position: relative;
   text-decoration: none;
+}
+
+a::after {
+  border-radius: 1em;
+  border-top: .1em solid #2F56B0;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0.14em;
+  left: 0;
 }
 
 a:hover {

@@ -12,7 +12,8 @@
   left: calc(50% - 8em);
   text-align: center;
   transform: translateY(-.25em);
-  transition: opacity .2s ease-out,
+  transition: visibility 0s .5s,
+              opacity .2s ease-out,
               transform .5s cubic-bezier(0,1,.5,1);
   visibility: hidden;
   width: 16em;
@@ -34,5 +35,7 @@
 .anchor-tooltip:hover .title-tooltip {
   opacity: 1;
   transform: none;
+  transition: opacity .2s ease-out,
+              transform .5s cubic-bezier(0,1,.5,1);
   visibility: visible;
 }
